@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, request
 import pandas as pd
 import numpy as np
 import pickle
- 
+import sklearn
 app= Flask(__name__)
 model_file= open('rf.pkl','rb')
 model=pickle.load(model_file) 
